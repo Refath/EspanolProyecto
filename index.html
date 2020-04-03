@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" href="style.scss">
-
 <h1>Soy un Matematico: Español Proyecto</h1>
 
 <div class="container">
@@ -24,3 +22,146 @@
 	<h2></h2>
 </div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FtjLm-qPyEM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<style>
+	@import url("https://fonts.googleapis.com/css?family=Sacramento");
+body {
+  background: black;
+}
+
+h1 {
+  color: lightblue;
+  font-family: "sacramento";
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  color: white;
+  position: fixed;
+  top: 300px;
+  margin-left: -200px;
+  margin-right: -200px;
+  margin-bottom: 100px;
+}
+
+.container {
+  margin: 4% auto;
+  width: 210px;
+  height: 140px;
+  position: relative;
+  top: 10px;
+  perspective: 1000px;
+}
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotation 20s infinite linear;
+}
+#carousel .one {
+  background: url("https://i.ytimg.com/vi/sF_V_MgaNOE/maxresdefault.jpg") no-repeat center center;
+  background-size: cover;
+}
+#carousel .two {
+  background: url("https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-1/c9.0.720.720a/p720x720/90623735_2252972624999471_2934839818661658624_o.jpg?_nc_cat=106&_nc_sid=dbb9e7&_nc_ohc=aJqux--JsYIAX_SbADX&_nc_ht=scontent-ort2-2.xx&oh=e78421a654fc70f0e98adbfff8669453&oe=5EAD8072") no-repeat center center;
+  background-size: cover;
+}
+#carousel .three {
+  background: url("https://i.ibb.co/VVtSWWb/Screenshot-2020-04-03-at-9-25-05-AM.png") no-repeat center center;
+  background-size: contain;
+}
+#carousel .four {
+  background: url("https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/40240004_1900113113618759_6513213296160538624_o.jpg?_nc_cat=105&_nc_sid=7aed08&_nc_ohc=RLGf5TQnDPgAX9_H3m5&_nc_ht=scontent-ort2-2.xx&oh=caaafe958c65d253d4dd99bb35ad4364&oe=5EAC3959") no-repeat center center;
+  background-size: cover;
+}
+#carousel .five {
+  background: url("https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/s960x960/83092454_2216464695316931_5535727685038243840_o.jpg?_nc_cat=104&_nc_sid=7aed08&_nc_ohc=2D3jqOvR81MAX9F2Ryg&_nc_ht=scontent-ort2-2.xx&_nc_tp=7&oh=4ef662541e8672ca163e4d3e2a201f9e&oe=5EAD84E6") no-repeat center center;
+  background-size: cover;
+}
+#carousel .six {
+  background: url("https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/39196677_1889516528011751_6528296873411739648_o.png?_nc_cat=101&_nc_sid=dd9801&_nc_ohc=aGnG8XNOFwMAX9W3qTj&_nc_ht=scontent-ort2-2.xx&oh=4360bc66d9bc508f7383383c5953c73a&oe=5EACF933") no-repeat center center;
+  background-size: cover;
+}
+#carousel .seven {
+  background: url("https://i.ibb.co/86GjDDd/Screenshot-2020-04-03-at-9-39-13-AM.png") no-repeat center center;
+  background-size: cover;
+}
+#carousel .eight {
+  background: url("https://i.ibb.co/XLxJsdN/Screenshot-2020-04-03-at-9-40-06-AM.png") no-repeat center center;
+  background-size: cover;
+}
+#carousel .nine {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSEimNBNYxgf-7ZpQW10nxkQQ2hB-Uc1OW5E6kjiZQefH4WubS1&usqp=CAU") no-repeat center center;
+  background-size: cover;
+}
+
+#carousel:hover {
+  animation-play-state: paused;
+}
+
+#carousel figure {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  left: 10px;
+  top: 10px;
+  background: white;
+  overflow: hidden;
+  border: solid 5px black;
+}
+
+#carousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(288px);
+}
+
+#carousel figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(288px);
+}
+
+#carousel figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(288px);
+}
+
+#carousel figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(288px);
+}
+
+#carousel figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(288px);
+}
+
+#carousel figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(288px);
+}
+
+#carousel figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(288px);
+}
+
+#carousel figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(288px);
+}
+
+#carousel figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(288px);
+}
+
+img {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+</style>
